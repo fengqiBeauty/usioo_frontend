@@ -1,0 +1,167 @@
+body,html {
+  margin: 0;
+  padding: 0;
+  /* height: 100%;
+  overflow-y: auto; */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  font-family: "PingFang SC","Helvetica Neue","Hiragino Sans GB","Segoe UI","Microsoft YaHei","微软雅黑",sans-serif;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: #cccccc;
+  font-size: 0.25rem;
+}
+input,textarea,button {
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+  -o-appearance: none; 
+  outline:none;
+}
+input {
+  caret-color: #eee;
+}
+a {
+  color: #7e8c8d;
+  text-decoration: none;
+  -webkit-backface-visibility: hidden;
+}
+
+/* p {
+  overflow: hidden;
+  word-break:keep-all;
+  white-space:nowrap;
+} */
+.f-p{
+  overflow: hidden;
+  word-break:keep-all;
+  white-space:nowrap;
+}
+
+li {
+  list-style: none;
+}
+.nav {
+  width:100%;
+  text-align: center;
+  line-height: 0.65rem;
+  border-bottom: 0.12rem solid #E9E9E9;
+}
+.nav span {
+  display:table-cell;
+  width:1%;
+}
+.selected {
+  background-color: #4CACF0;
+  color: #fff;
+  transition: all 0.5s
+}
+.over {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+/* .star {
+  height: 0.4rem;
+} */
+
+.star>input {
+  margin-right: 0.02rem;
+  width: 0.45rem;
+  border: 0;
+  background-color: transparent;
+  color: #f39e34;
+  transition: color .8s;
+}
+
+.star>input:nth-of-type(1) {
+  display: none;
+}
+
+.star>input:before {
+  position: relative;
+  content: "★";
+  left: 0;
+  top: 0;
+  font-size: 0.45rem;
+  height: 100%;
+  width: 100%;
+  background: #FFF;
+}
+.mint-button--default {
+  border-radius: 0.5rem;
+  color: #fff;
+  background-color: #4cacf0;
+  font-size: 0.26rem;
+  letter-spacing: 1px;
+  box-shadow: 0px 0.04rem 0.16rem rgba(76, 172, 240, 0.56);
+}
+.star>input:checked~input {
+  color: #666;
+}
+@keyframes rounts{
+  0 {color:#666;}
+  50% {color:#fff;}
+  100% {color:#ccc;}
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .3s ease;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0
+}
+.mint-tab-item-label{
+  font-size: 0.24rem
+}
+.f-picker{
+  margin-top: 100px;
+}
+.f-mm .yd-radio-icon {z-index:0;margin-bottom: 7px;}
+.yd-checkbox-text{font-size: 0.22rem;}
+.yd-checkbox{margin-bottom: 20px;padding-right: 20px;}
+.read .yd-checkbox{margin-bottom: 20px;padding-right: 0;}
+.mint-cell-wrapper{color:#666;}
+/* .yd-cityselect-content{padding-top: 130px;} */
+.mint-field-core {font-size: 0.26rem;}
+.mint-cell-wrapper{font-size: 0.26rem;}
+.yd-datetime-input{color:#fff;}
+/* .yd-popup-content{height:200px;border-radius: 10px;text-align: center;padding:40px 0;} */
+.yd-popup-content{border-radius: 10px;text-align: center;padding:40px 0;} 
+.xueli .yd-radio{margin-bottom: 15px;}
+.f-check-group{margin-left:40px;}
+.f-check-group .yd-checkbox{margin-bottom: 0px;}
+.hdybm .mint-field .mint-cell-title{width:40%;}
+.hdybm .mint-cell-text{width:20%;}
+
+.yd-step-item-bottom, .yd-step-item-top{font-size: 0.26rem;}
+.yd-cell-item{color:#666}
+.yd-cell-left{font-size: 0.26rem;}
+
+.hd .yd-cell-left{width: 40%;}
+.yd-cell-right .yd-datetime-input, .yd-cell-right input[type=date], .yd-cell-right input[type=datetime-local], .yd-cell-right input[type=email], .yd-cell-right input[type=number]:not(.yd-spinner-input), .yd-cell-right input[type=password], .yd-cell-right input[type=tel], .yd-cell-right input[type=text], .yd-cell-right input[type=time], .yd-cell-right input[type=url]{
+  font-size: 0.26rem;
+}
+input[type=file]{
+  background-color: #fff;
+}
+.f-xm .mint-cell-wrapper{margin-top: -1px;}
+.f-sg .mint-cell-wrapper{margin-top: -1px;}
+.f-hy .mint-cell-wrapper{margin-top: -1px;}
+.mint-cell-wrapper{background-size:0% 0%;border-bottom: 0.5px solid #d9d9d9;}
+.yuyue .picker-center-highlight:before, .picker-center-highlight:after{background-color: #d9d9d9;}
+.f-popup .yd-popup-content{text-align: left;padding:15px;}
+.f-popup .yd-popup-center.yd-popup-show{height:70%;overflow: auto;}
+.mint-button::after{background-color: transparent;}
+.swiper-pagination-bullet{margin: 15px 10px;}
+.swiper-pagination-bullet-active{background:#4081CD; }
+/* 记录头部样式 */
+.yd-accordion-head{background-image: url(../../common/images/yljl.jpg);background-size:100% 100%;}
+.yd-accordion-title{color:#fff !important;}
+.yd-accordion-head>i:after{border-bottom: 7px solid #fff !important;}
+.record .mint-tab-container{padding:10px;}
